@@ -106,7 +106,8 @@ const deleteIdea = (id:string) => {
 }
 
 //自定义校验规则
-const validatorIdea = ( value:any, callback:any) => {
+// @ts-ignore
+const validatorIdea = (rule:any, value:any, callback:any) => {
   if (!value || value.trim().length === 0){
     callback(new Error('长度至少是1'))
   }else{

@@ -1,0 +1,56 @@
+/* reset.scss - 小项目轻量版全局清空样式 */
+
+/* 全局元素清空 margin 和 padding，设置 box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body 默认字体和行高 */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+/* 列表去掉默认样式 */
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+/* 超链接去掉默认下划线和颜色继承 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 图片默认块元素，防止下方空隙 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 表格去掉边距和间距 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 表单控件默认样式清理 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
